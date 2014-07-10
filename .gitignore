@@ -1,0 +1,8 @@
+# Temporary files (eg. emacs) #
+############
+*~
+
+# Compiled files #
+############
+*.class
+target/
