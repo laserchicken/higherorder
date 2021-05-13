@@ -1,14 +1,14 @@
 package com.github.laserchicken;
 
 /**
- * Functor (function object), emuluje funkcje wyższego rzędu (higher-order function),
- * dwa argumenty.
+ * Functor (function object), emulates higher-order function,
+ * two arguments.
  * 
  * @author mkmiecinski
  *
  * 
- * @param <I> typ argumentow wejsciowych
- * @param <O> typ argumentu wyjściowego
+ * @param <I> input arguments type
+ * @param <O> output argument type
  */
 public interface BinaryFunctor<I,O> {
 	O eval(I i1, I i2);

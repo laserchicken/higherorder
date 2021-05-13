@@ -10,12 +10,12 @@ import java.util.List;
 final public class Reduce <T> {
 
 	/**
-	 * 	Aplikacja reduce na liscie.
+	 *  Apply reduce to a list
 	 *  <p>
-	 *  Przyklad dla:
-	 *  funkcja aggregujaca - +
+	 *  Example:
+	 *  aggregate function - +
 	 *  initValue - 0
-	 *  apply będzie rownowazne nastepującej konstrukcji:
+	 *  apply is equivalent to:
 	 *  <br>
 	 * 	int result = 0;
 	 *  <br>
@@ -25,9 +25,9 @@ final public class Reduce <T> {
 	 *  <br>
 	 * 	return result;
 	 * 
-	 * @param aggregation funkcja agregujaca, dwuargumentowa
-	 * @param list lista agregowanych elementow
-	 * @param initValue wartosc inicjalizujaca agregacje
+	 * @param aggregation aggregate function, two arguments
+	 * @param list list of elements to aggregate
+	 * @param initValue initial aggregation value
 	 * @return
 	 */
 	public T apply(BinaryFunctor<T,T> aggregation, List<T> list, T initValue) {
