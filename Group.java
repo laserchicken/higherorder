@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * <PRE>
- * Warunek wstepny: lista wejsciowa jest posortowana, tak że elementy podobne (similarityPredicate) sa obok siebie (adjacent)
+ * Prerequisite: input list is sorted, so the similar elements (similarityPredicate) are adjacent
  * @author mkmiecinski
  *
  * @param <T>
@@ -29,7 +29,7 @@ final public class Group<T> {
 			group.add(element2);
 			element1 = element2;			
 		}
-		//przypadek specjalny, nalezy dodac ostatina grupe
+		//special case, we need to add the last group
 		result.add(group);
 		return result;		
 	}

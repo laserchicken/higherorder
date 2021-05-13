@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Klasa umożliwia filtrowanie danej listy elementów według zadanego predykatu.
+ * Filter list by a predicate
  * @author mkmiecinski
  *
  * @param <T>
@@ -12,11 +12,10 @@ import java.util.List;
 final public class Filter<T> {
 
 	/**
-	 * Aplikacja filtru na liscie. 
-	 * @param predicate funkcja boolowska, jesli dla danego elementu zwraca true
-	 * 	to element przechodzi przez filtr
-	 * @param list list do filtrowania
-	 * @return nowa, odfiltrowana lista
+	 * Apply filter to a list. 
+	 * @param predicate function, if true include the element
+	 * @param list list to filter
+	 * @return new filtered list
 	 */
 	public List<T> apply(UnaryFunctor<T,Boolean> predicate, List<T> list) {
 		List<T> result = new ArrayList<T>();
